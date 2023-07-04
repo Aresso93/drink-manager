@@ -27,4 +27,18 @@ class Cellar{
     return allBeverages;
   }
 
+  fromDbObjects(data){
+    for (const genericObject of data) {
+         const wine = new Wine (genericObject.title, genericObject.author, genericObject.dop, genericObject.publisher)
+         this.publications.push(wine);
+    }
+  }
+
+  fromDbObjects(data){
+    for (const genericObject of data) {
+         const beer = new Beer(genericObject.title, genericObject.author, genericObject.dop, genericObject.publisher)
+         this.publications.push(beer);
+    }
+ }
+
 }
