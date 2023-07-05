@@ -30,14 +30,14 @@ class Cellar{
   fromDbObjects(data){
     for (const genericObject of data) {
          const wine = new Wine (genericObject.title, genericObject.author, genericObject.dop, genericObject.publisher)
-         this.publications.push(wine);
+         this.beveragesArray.push(wine);
     }
   }
 
   fromDbObjects(data){
     for (const genericObject of data) {
          const beer = new Beer(genericObject.title, genericObject.author, genericObject.dop, genericObject.publisher)
-         this.publications.push(beer);
+         this.beveragesArray.push(beer);
     }
  }
 

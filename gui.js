@@ -7,7 +7,7 @@ class GUI{
    
   const data = this.storage.loadData();
   if (data){
-    this.library.fromDbObjects(data);
+    this.cellar.fromDbObjects(data);
   }
   
   console.log(data);
